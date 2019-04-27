@@ -25,9 +25,16 @@
       h3 {
           color:  teal;
       }
+      h2 {
+          color:  white;
+          background-color: teal
+      }
   </style>
   <!-- Create the Overall Grid -->
   <div class="container">
+      <div class="d-flex flex-row">
+         <h2>Latitude</h2>
+      </div>
       <div class="d-flex flex-row-reverse">
           <div class="p-2">
               <a target="_self" href="data.html">Data</a>
@@ -40,10 +47,10 @@
                 Plots
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="LatTemp.png">Max Temperature</a>
-                <a class="dropdown-item" href="LatHumidity.png">Humidity</a>
-                <a class="dropdown-item" href="LatCloudiness.png">Cloudiness</a>
-                <a class="dropdown-item" href="LatWindSpeed.png">Wind Speed</a>
+                <a class="dropdown-item" href="LatTempPlotDetails.png">Max Temperature</a>
+                <a class="dropdown-item" href="LatHumidityPlotDetails.png">Humidity</a>
+                <a class="dropdown-item" href="LatCloudinessPlotDetails.png">Cloudiness</a>
+                <a class="dropdown-item" href="LatWindspeedPlotDetails.png">Wind Speed</a>
               </div>
           </div>
       </div>
@@ -52,7 +59,7 @@
     <div class="row">
       <!-- First of two columns -->
       <div class="col">
-        <iframe src="SummaryLatitude.png" width="650" height="500" name="iframe_w"></iframe>
+        <iframe src="SummaryLatitude.png" width="750" height="725" name="iframe_w"></iframe>
       </div>
       <!-- Second of two columns -->
       <div class="col">
@@ -61,28 +68,28 @@
           <div class="row">
               <div class="col-sm-6">
                   <div class="thumbnail">
-                      <a target="iframe_w" href="LatCloudiness.png">
-                      <img src="LatCloudiness.png" alt="LatCloudiness" class="img-thumbnail">
+                      <a target="iframe_w" href="LatCloudinessPlotDetails.png">
+                      <img src="LatCloudinessPlot.png" alt="LatCloudiness" class="img-thumbnail">
                   </div>          
               </div>
               <div class="col-sm-6">
                   <div class="thumbnail">
-                      <a target="iframe_w" href="LatHumidity.png">
-                      <img src="LatHumidity.png" alt="LatHumidity" class="img-thumbnail">
+                      <a target="iframe_w" href="LatHumidityPlotDetails.png">
+                      <img src="LatHumidPlot.png" alt="LatHumidity" class="img-thumbnail">
                   </div>          
               </div>
           </div>
           <div class="row">
               <div class="col-sm-6">
                   <div class="thumbnail">
-                      <a target="iframe_w" href="LatTemp.png">
-                      <img src="LatTemp.png" alt="LatTemp" class="img-thumbnail">
+                      <a target="iframe_w" href="LatTempPlotDetails.png">
+                      <img src="LatTempPlot.png" alt="LatTemp" class="img-thumbnail">
                   </div>          
              </div>
               <div class="col-sm-6">
                   <div class="thumbnail">
-                      <a target="iframe_w" href="LatWindSpeed.png">
-                      <img src="LatWindSpeed.png" alt="LatWindSpeed" class="img-thumbnail">
+                      <a target="iframe_w" href="LatWindspeedPlotDetails.png">
+                      <img src="LatWindSpeedPlot.png" alt="LatWindSpeed" class="img-thumbnail">
                   </div>          
               </div>
           </div>
